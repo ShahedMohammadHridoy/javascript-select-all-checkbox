@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+	</head>
+
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="https://shahed.com.bd">Shahed</a>
+		</div>
+	</nav>
+	<div class="col-md-3"></div>
+	<div class="col-md-6 well">
+		<h3 class="text-primary">How to Check All Checkboxes with One Click</h3>
+		<hr style="border-top:1px dotted #ccc;"/>
+		<div class="col-md-12">
+							
+			<h2>Select your favorite move genre</h2>
+			<label><input type="checkbox" onclick="check(this);" />Select All</label>	
+			<ul style="list-style-type:none;">
+				<li><label><input type="checkbox" name="movie_genre" class="select_all" value="Action">Action</label></li>
+				<li><label><input type="checkbox" name="movie_genre" class="select_all" value="Drama">Drama</label></li>
+				<li><label><input type="checkbox" name="movie_genre" class="select_all" value="Comedy">Comedy</label></li>
+				<li><label><input type="checkbox" name="movie_genre" class="select_all" value="Horror">Horror</label></li>
+				<li><label><input type="checkbox" name="movie_genre" class="select_all" value="Sci-fi">Sci-fi</label></li>
+				<li><label><input type="checkbox" name="movie_genre" class="select_all" value="Romance">Romance</label></li>
+				<li><label><input type="checkbox" name="movie_genre" class="select_all" value="Thriller">Thriller</label></li>
+			</ul>
+			
+			<button type="button" class="btn btn-primary" onclick="selectedCheck();">Submit</button>
+		</div>
+	</div>
+
+<script src="script.js"></script>
+</body>
+</html>
